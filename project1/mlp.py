@@ -42,7 +42,7 @@ def fit_by_mlp(n_splits=1, hidden_layer_sizes=(100,), activation="relu", solver=
 
 
 n_fold = 10
-writer = SummaryWriter(log_dir=f'MLP', flush_secs=2)
+writer = SummaryWriter(log_dir=f'logs/MLP', flush_secs=2)
 log_value = writer.add_scalars
 for activation in ["logistic", "tanh", "relu"]:
     for solver in ["sgd", "adam"]:

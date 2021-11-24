@@ -45,7 +45,7 @@ def fit_by_knn(n_splits=1, n_neighbors=5, weights="uniform", algorithm="auto"):
 
 
 n_fold = 10
-writer = SummaryWriter(log_dir=f'KNN', flush_secs=2)
+writer = SummaryWriter(log_dir=f'logs/KNN', flush_secs=2)
 log_value = writer.add_scalars
 for algorithm in ["ball_tree", "kd_tree", "brute"]:
     for weights in ["uniform", "distance"]:

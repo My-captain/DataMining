@@ -41,7 +41,7 @@ def fit_by_svm(n_splits=1, kernel="rbf", degree=3):
 
 
 n_fold = 10
-writer = SummaryWriter(log_dir=f'SVM', flush_secs=2)
+writer = SummaryWriter(log_dir=f'logs/SVM', flush_secs=2)
 log_value = writer.add_scalars
 for kernel_func in ["linear", "poly", "rbf", "sigmoid"]:
     for degree in range(6):

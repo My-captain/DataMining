@@ -39,7 +39,7 @@ def fit_by_decision_tree(n_splits=1, criterion="gini", max_depth=5):
     return np.mean(train_acc_history), np.mean(test_acc_history)
 
 
-writer = SummaryWriter(log_dir=f'DecisionTree', flush_secs=2)
+writer = SummaryWriter(log_dir=f'logs/DecisionTree', flush_secs=2)
 log_value = writer.add_scalars
 
 
